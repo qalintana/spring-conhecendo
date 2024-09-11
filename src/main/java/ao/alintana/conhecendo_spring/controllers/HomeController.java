@@ -28,10 +28,11 @@ public class HomeController {
     @GetMapping("/modelandview")
     public ModelAndView home3() {
         var modelAndView = new ModelAndView("home");
-        modelAndView.addObject("nome", "Domingas Alice "+getClass().getSimpleName());
+
+        modelAndView.addObject("nome", "Domingas Alice " + getClass().getSimpleName());
+
         return modelAndView;
     }
-
 
     @GetMapping("/form")
     public ModelAndView form() {
